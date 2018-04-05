@@ -47,10 +47,10 @@ public class MainActivity  extends FragmentActivity implements LoaderManager.Loa
             SupportMapFragment fm = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
 
             // Getting GoogleMap object from the fragment
-//            googleMap = fm.getMap();
+            googleMap = fm.getMap();    //Yahan Error aaraha hai...
 //
 //             Enabling MyLocation Layer of Google Map
-//            googleMap.setMyLocationEnabled(true);
+            googleMap.setMyLocationEnabled(true);
 
             // Invoke LoaderCallbacks to retrieve and draw already saved locations in map
             getSupportLoaderManager().initLoader(0, null, this);
